@@ -23,16 +23,18 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath) as! TableViewCell
         let image = pictures[indexPath.row]
-        cell.textLabel?.text = image
-        cell.imageView?.image = UIImage(named: image)
+        cell.label?.text = image
+        cell.imageBackground?.image = UIImage(named: image)
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
             vc.selectedImage = pictures[indexPath.row]
+            vc.selectedIndex = indexPath.row
+            vc.totalCount = pictures.count
             
             navigationController?.pushViewController(vc, animated: true)
         }

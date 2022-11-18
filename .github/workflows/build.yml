@@ -29,8 +29,13 @@ jobs:
         run: ./.github/scripts/build.sh
       - name: Exporting .ipa
         run: ./.github/scripts/export_ipa.sh
-      - name: Archive build artifacts
+      - name: Archive archive
         uses: actions/upload-artifact@v3
         with:
           name: StormViewer.xcarchive
           path: build/StormViewer.xcarchive
+      - name: Archive IPA
+        uses: actions/upload-artifact@v3
+        with:
+          name: StormViewer.ipa
+          path: build/StormViewer.ipa

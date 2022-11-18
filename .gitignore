@@ -1,2 +1,4 @@
 xcuserdata
 build
+*.p12
+*.mobileprovision

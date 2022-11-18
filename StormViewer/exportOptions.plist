@@ -11,7 +11,7 @@
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>tech.isokol.StormViewer</key>
-		<string>StormViewer_Distribution</string>
+		<string>StormViewer Distribution</string>
 	</dict>
 </dict>
 </plist>

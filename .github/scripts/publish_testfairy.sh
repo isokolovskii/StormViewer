@@ -18,7 +18,7 @@ if [ -z "$URL" ]; then
 	exit 1
 fi
 
-export URL=${URL}
+export DEPLOYMENT_URL=$(echo ${URL})
 
 echo "OK!"
 echo

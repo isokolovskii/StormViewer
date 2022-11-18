@@ -60,5 +60,5 @@ jobs:
         env:
           TESTFAIRY_API_KEY: ${{ secrets.TESTFAIRY_API_KEY }}
         run: |
-          ./.github/scripts/publish_testfairy.sh
-          echo "testfairy_url=$URL" >> $GITHUB_OUTPUT
+          . ./.github/scripts/publish_testfairy.sh
+          echo "testfairy_url=$DEPLOYMENT_URL" >> $GITHUB_OUTPUT

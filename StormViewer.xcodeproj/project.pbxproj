@@ -25,7 +25,6 @@
 		E20BE35B292689980074AD7E /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E20BE351292689980074AD7E /* nssl0034.jpg */; };
 		E20BE35D29268F800074AD7E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BE35C29268F800074AD7E /* DetailViewController.swift */; };
 		E20BE3602926C2340074AD7E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BE35E2926C2340074AD7E /* TableViewCell.swift */; };
-		E2A3BF7529278732005A0145 /* exportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2A3BF7429278732005A0145 /* exportOptions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +48,6 @@
 		E20BE351292689980074AD7E /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
 		E20BE35C29268F800074AD7E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E20BE35E2926C2340074AD7E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		E2A3BF7429278732005A0145 /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = exportOptions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +90,6 @@
 				E20BE33E2926806A0074AD7E /* LaunchScreen.storyboard */,
 				E20BE3412926806A0074AD7E /* Info.plist */,
 				E20BE347292689980074AD7E /* Content */,
-				E2A3BF7429278732005A0145 /* exportOptions.plist */,
 			);
 			path = StormViewer;
 			sourceTree = "<group>";
@@ -181,7 +178,6 @@
 				E20BE352292689980074AD7E /* nssl0049.jpg in Resources */,
 				E20BE357292689980074AD7E /* nssl0041.jpg in Resources */,
 				E20BE358292689980074AD7E /* nssl0042.jpg in Resources */,
-				E2A3BF7529278732005A0145 /* exportOptions.plist in Resources */,
 				E20BE3402926806A0074AD7E /* LaunchScreen.storyboard in Resources */,
 				E20BE33D2926806A0074AD7E /* Assets.xcassets in Resources */,
 				E20BE355292689980074AD7E /* nssl0045.jpg in Resources */,

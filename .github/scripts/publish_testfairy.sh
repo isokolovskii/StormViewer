@@ -18,6 +18,8 @@ if [ -z "$URL" ]; then
 	exit 1
 fi
 
+export URL=${URL}
+
 echo "OK!"
 echo
 echo "Build was successfully uploaded to TestFairy and is available at:"

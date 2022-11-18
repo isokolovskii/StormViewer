@@ -1,0 +1,36 @@
+name: Build & Deploy
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build App
+    environment: Release
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+      - name: Install gpg
+        run: brew install gnupg
+      - name: Decrypt certificate and profile
+        env:
+          IOS_KEYS: ${{ secrets.IOS_KEYS }}
+        run: ./.github/secrets/secrets.sh
+      - name: Setup keychain
+        run: ./.github/secrets/keychain.sh
+      - name: Archiving project
+        env:
+          PR_NUMBER: $(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
+        run: ./.github/scripts/build.sh
+      - name: Exporting .ipa
+        run: ./.github/scripts/export_ipa.sh
+      - name: Archive build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: StormViewer.xcarchive
+          path: build/StormViewer.xcarchive

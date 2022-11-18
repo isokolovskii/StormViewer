@@ -21,5 +21,17 @@
 			</array>
 		</dict>
 	</dict>
+	<key>CFBundleDisplayName</key>
+	<string>Storm Viewer</string>
+	<key>CFBundleName</key>
+	<string>Storm Viewer</string>
+	<key>CFBundleIdentifier</key>
+	<string>tech.isokol.StormViewer</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 </dict>
 </plist>

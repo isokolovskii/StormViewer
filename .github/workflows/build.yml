@@ -20,9 +20,9 @@ jobs:
       - name: Decrypt certificate and profile
         env:
           IOS_KEYS: ${{ secrets.IOS_KEYS }}
-        run: ./.github/secrets/secrets.sh
+        run: ./.github/scripts/secrets.sh
       - name: Setup keychain
-        run: ./.github/secrets/keychain.sh
+        run: ./.github/scripts/keychain.sh
       - name: Archiving project
         env:
           PR_NUMBER: $(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")

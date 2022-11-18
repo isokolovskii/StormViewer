@@ -5,7 +5,7 @@ UPLOADER_VERSION=2.14
 AUTO_UPDATE="true"
 COMMENT=""
 SERVER_ENDPOINT=https://upload.testfairy.com
-APP_FILENAME=build/Storm\ Viewer.ipa
+APP_FILENAME=Storm\ Viewer.ipa
 
 /bin/echo -n "Uploading ${APP_FILENAME} to TestFairy.. "
 JSON=$( curl -s ${SERVER_ENDPOINT}/api/upload -F api_key=${TESTFAIRY_API_KEY} -F file="@${APP_FILENAME}" -F comment="${COMMENT}" -F auto-update="${AUTO_UPDATE}" -A "TestFairy Command Line Uploader ${UPLOADER_VERSION}" )

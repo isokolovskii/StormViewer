@@ -3,6 +3,7 @@ on:
   pull_request:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,7 +18,7 @@ jobs:
       - name: Decrypt certificate and profile
         env:
           IOS_KEYS: ${{ secrets.IOS_KEYS }}
-        run: ./.github/secrets/production.sh
+        run: ./.github/secrets/test.sh
       - name: Setup keychain
         run: ./.github/scripts/keychain.sh
 
